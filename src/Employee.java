@@ -19,11 +19,16 @@ public class Employee implements Person {
         return gender;
     }
 
-    public int yearsWorked() {
-        return Math.max(0, age - 20);
+    @Override
+    public void getInfo() {
+        System.out.println("Employee Info:");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Gender: " + gender);
+        System.out.println("Years Worked: " + yearsWorked());
     }
 
-    public void getName() {
-        System.out.println("Employee Name: " + name);
+    public int yearsWorked() {
+        return Math.max(0, age - 20);
     }
 }

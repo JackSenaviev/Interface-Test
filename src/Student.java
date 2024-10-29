@@ -19,7 +19,11 @@ public class Student implements Person {
         return gender;
     }
 
-    public void getName() {
-        System.out.println("Student Name: " + name);
+    @Override
+    public void getInfo() {
+        System.out.println("Student Info:");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Gender: " + gender);
     }
 }
